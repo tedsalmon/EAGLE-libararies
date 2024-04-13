@@ -204,6 +204,11 @@
 <wire x1="0.2" y1="0.4" x2="0.2" y2="-0.4" width="0.1" layer="21"/>
 <wire x1="0.2" y1="0.4" x2="-0.3" y2="0" width="0.1" layer="21"/>
 <wire x1="-0.3" y1="0" x2="0.2" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="-2.8" y1="0.775" x2="-2.8" y2="-0.775" width="0.1" layer="21"/>
+<wire x1="-2.8" y1="-0.775" x2="2.8" y2="-0.775" width="0.1" layer="21"/>
+<wire x1="2.8" y1="-0.775" x2="2.8" y2="0.775" width="0.1" layer="21"/>
+<wire x1="2.8" y1="0.775" x2="-2.8" y2="0.775" width="0.1" layer="21"/>
+<wire x1="-3" y1="0.5" x2="-3" y2="-0.5" width="0.1" layer="21"/>
 </package>
 <package name="7.7MMX6.7MM">
 <smd name="1" x="-3.25" y="0" dx="3.5" dy="2.5" layer="1" rot="R90"/>
@@ -515,6 +520,15 @@
 <wire x1="0.975" y1="-0.575" x2="-0.975" y2="-0.575" width="0.05" layer="39"/>
 <wire x1="-0.975" y1="-0.575" x2="-0.975" y2="0.575" width="0.05" layer="39"/>
 <text x="-1" y="0" size="0.75" layer="25" font="vector" ratio="15" align="center-right">&gt;NAME</text>
+</package>
+<package name="D2PAK">
+<smd name="G" x="-2.55" y="-5.675" dx="2.1" dy="4.6" layer="1"/>
+<smd name="S" x="2.55" y="-5.675" dx="2.1" dy="4.6" layer="1"/>
+<smd name="D" x="0" y="3.475" dx="11.5" dy="9.5" layer="1"/>
+<wire x1="-5" y1="-3" x2="-5" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="5" y1="-1.5" x2="5" y2="-3" width="0.2" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.2" layer="21"/>
+<text x="0" y="9" size="1" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2786,7 +2800,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD2150PL_2A_150V">
+<deviceset name="SMD2150PL_2A_150V" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -2945,6 +2959,104 @@ Switches electrical signals</description>
 <technology name="">
 <attribute name="MFG" value="Diodes" constant="no"/>
 <attribute name="PN" value="SMBJ18A-13-F" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NMOSFET-DMN67D8LW" prefix="Q">
+<gates>
+<gate name="G$1" symbol="NMOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT323">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Inc" constant="no"/>
+<attribute name="PN" value="DMN67D8LW" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMSZ5233B" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Inc" constant="no"/>
+<attribute name="PN" value="MMSZ5233B" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BZT52C5V1" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Inc" constant="no"/>
+<attribute name="PN" value="BZT52C5V1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1MOHM" prefix="T">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Panasonic" constant="no"/>
+<attribute name="PN" value="ERJ-3EKF1004V" constant="no"/>
+<attribute name="VALUE" value="1MOHM" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRF5305" prefix="Q">
+<gates>
+<gate name="G$1" symbol="PMOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2PAK">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Infinion" constant="no"/>
+<attribute name="PN" value="IRF5305STRLPBF" constant="no"/>
 </technology>
 </technologies>
 </device>
