@@ -3034,9 +3034,10 @@ Switches electrical signals</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DEVICE" value="1MOHM-0603-1/10-1%" constant="no"/>
 <attribute name="MFG" value="Panasonic" constant="no"/>
 <attribute name="PN" value="ERJ-3EKF1004V" constant="no"/>
-<attribute name="VALUE" value="1MOHM" constant="no"/>
+<attribute name="VALUE" value="1M" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3057,6 +3058,47 @@ Switches electrical signals</description>
 <technology name="">
 <attribute name="MFG" value="Infinion" constant="no"/>
 <attribute name="PN" value="IRF5305STRLPBF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMZ5248B">
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Didoes Inc" constant="no"/>
+<attribute name="PN" value="MMZ5248B" constant="no"/>
+<attribute name="VALUE" value="18V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LITTLEBLOCK_FUSE_3A" prefix="F" uservalue="yes">
+<description>&lt;p&gt;Littlefuse 154 Series Omni-BLOK Fuse&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LITTLEFUSE">
+<connects>
+<connect gate="G$1" pin="IN" pad="OUT"/>
+<connect gate="G$1" pin="OUT" pad="IN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Littelfuse" constant="no"/>
+<attribute name="PN" value="0154003.DRT" constant="no"/>
+<attribute name="VALUE" value="3A" constant="no"/>
 </technology>
 </technologies>
 </device>
