@@ -111,6 +111,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -554,6 +556,20 @@
 <wire x1="1.25" y1="2.8" x2="1.25" y2="-2.8" width="0.1" layer="21"/>
 <wire x1="1.25" y1="-2.8" x2="0.7" y2="-2.8" width="0.1" layer="21"/>
 <text x="-1.5" y="0" size="1" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SOD323">
+<description>&lt;b&gt;Diode&lt;/b&gt;</description>
+<smd name="C" x="-1.3" y="0" dx="1" dy="1" layer="1"/>
+<smd name="A" x="1.3" y="0" dx="1" dy="1" layer="1"/>
+<text x="0" y="0.8" size="0.75" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="0.2" y1="0.4" x2="0.2" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="0.2" y1="0.4" x2="-0.3" y2="0" width="0.1" layer="21"/>
+<wire x1="-0.3" y1="0" x2="0.2" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="0.65" x2="-1.9" y2="-0.65" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="-0.65" x2="1.9" y2="-0.65" width="0.1" layer="21"/>
+<wire x1="1.9" y1="-0.65" x2="1.9" y2="0.65" width="0.1" layer="21"/>
+<wire x1="1.9" y1="0.65" x2="-1.9" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-2.1" y1="0.5" x2="-2.1" y2="-0.5" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3225,6 +3241,49 @@ Switches electrical signals</description>
 <attribute name="DEVICE" value="33OHM-4ARR-1%-62.5mw" constant="no"/>
 <attribute name="MFG" value="Bourns" constant="no"/>
 <attribute name="PN" value="CAY16-33R0F4LF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2.8KOHM" prefix="R" uservalue="yes">
+<description>&lt;p&gt;2K Ohm Resistor&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DEVICE" value="2.8KOHM-0603-1/10-1%" constant="no"/>
+<attribute name="MFG" value="Panasonic"/>
+<attribute name="PACKAGE" value="0603" constant="no"/>
+<attribute name="PN" value="ERJ-3EKF2801V"/>
+<attribute name="VALUE" value="2.8k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD103AWS-TP">
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="MCC" constant="no"/>
+<attribute name="PN" value="SD103AWS-TP
+" constant="no"/>
 </technology>
 </technologies>
 </device>
