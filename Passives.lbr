@@ -3269,7 +3269,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SD103AWS-TP">
+<deviceset name="SD103AWS-TP" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -3282,8 +3282,7 @@ Switches electrical signals</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="MCC" constant="no"/>
-<attribute name="PN" value="SD103AWS-TP
-" constant="no"/>
+<attribute name="PN" value="SD103AWS-TP " constant="no"/>
 </technology>
 </technologies>
 </device>
