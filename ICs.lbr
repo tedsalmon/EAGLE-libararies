@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -2417,6 +2417,80 @@
 <wire x1="2" y1="-2" x2="2" y2="-1.6" width="0.1" layer="21"/>
 <circle x="-2.9" y="1.2" radius="0.1" width="0.2" layer="21"/>
 </package>
+<package name="SO-8EP">
+<description>8-Pin SOIC 208-mil</description>
+<circle x="-1.905" y="-4" radius="0.15" width="0.3" layer="21"/>
+<wire x1="2.6" y1="-3" x2="2.6" y2="3" width="0.2" layer="21"/>
+<wire x1="-2.6" y1="3" x2="-2.6" y2="-3" width="0.2" layer="21"/>
+<wire x1="-2.44" y1="3" x2="-2.6" y2="3" width="0.2" layer="21"/>
+<wire x1="2.6" y1="3" x2="2.45" y2="3" width="0.2" layer="21"/>
+<wire x1="2.45" y1="-3" x2="2.6" y2="-3" width="0.2" layer="21"/>
+<wire x1="-2.6" y1="-3" x2="-2.45" y2="-3" width="0.2" layer="21"/>
+<smd name="1" x="-1.905" y="-2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="2" x="-0.635" y="-2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="3" x="0.635" y="-2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="4" x="1.905" y="-2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="5" x="1.905" y="2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="6" x="0.635" y="2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="7" x="-0.635" y="2.675" dx="0.85" dy="1.75" layer="1"/>
+<smd name="8" x="-1.905" y="2.675" dx="0.85" dy="1.75" layer="1"/>
+<text x="-2.9845" y="0" size="1" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1"/>
+</package>
+<package name="LFCSP-32">
+<wire x1="-2.55" y1="2.55" x2="-2.55" y2="-2.55" width="0.1" layer="21"/>
+<wire x1="-2.55" y1="-2.55" x2="2.55" y2="-2.55" width="0.1" layer="21"/>
+<wire x1="2.55" y1="-2.55" x2="2.55" y2="2" width="0.1" layer="21"/>
+<smd name="1" x="2.45" y="1.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="2.45" y="1.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="2.45" y="0.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="2.45" y="0.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="2.45" y="-0.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="2.45" y="-0.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="2.45" y="-1.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="2.45" y="-1.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="9" x="1.75" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="10" x="1.25" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="11" x="0.75" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="12" x="0.25" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="13" x="-0.25" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="14" x="-0.75" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="15" x="-1.25" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="16" x="-1.75" y="-2.45" dx="0.25" dy="0.8" layer="1" rot="R180"/>
+<smd name="17" x="-2.45" y="-1.25" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="18" x="-2.45" y="-0.75" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="19" x="-2.45" y="-0.25" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="20" x="-2.45" y="-1.75" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="21" x="-2.45" y="0.25" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="22" x="-2.45" y="0.75" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="23" x="-2.45" y="1.25" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="24" x="-2.45" y="1.75" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="25" x="-1.75" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="26" x="-1.25" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="27" x="-0.75" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="28" x="-0.25" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="29" x="0.25" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="30" x="0.75" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="31" x="1.25" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="32" x="1.75" y="2.45" dx="0.25" dy="0.8" layer="1"/>
+<smd name="EP" x="0" y="0" dx="3.6" dy="3.6" layer="1"/>
+<wire x1="2" y1="2.55" x2="-2.55" y2="2.55" width="0.1" layer="21"/>
+<wire x1="2" y1="2.55" x2="2.55" y2="2" width="0.1" layer="21"/>
+<circle x="3.1" y="1.75" radius="0.1" width="0.2" layer="21"/>
+<text x="4" y="0" size="1" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="TSOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.45" y1="0.5" x2="1.45" y2="-0.5" width="0.2" layer="21"/>
+<wire x1="-1.45" y1="-0.5" x2="-1.45" y2="0.5" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.2" layer="21"/>
+<smd name="1" x="-0.95" y="-1.45" dx="0.6" dy="1.5" layer="1"/>
+<smd name="2" x="0" y="-1.45" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.95" y="-1.45" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="0.95" y="1.45" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="-0.95" y="1.45" dx="0.6" dy="1.5" layer="1"/>
+<text x="-1.65" y="0" size="1" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BM83SM1">
@@ -3935,7 +4009,7 @@
 <pin name="VCC" x="-17.78" y="-12.7" length="short"/>
 <pin name="AGND" x="-5.08" y="-20.32" length="short" rot="R90"/>
 <pin name="PGND" x="2.54" y="-20.32" length="short" rot="R90"/>
-<pin name="RND" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="RGND" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="GATE" x="17.78" y="-7.62" length="short" rot="R180"/>
 <pin name="NC" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="VDROP" x="17.78" y="2.54" length="short" rot="R180"/>
@@ -3958,6 +4032,96 @@
 <pin name="RST" x="10.16" y="7.62" length="short" rot="R180"/>
 <text x="0" y="0" size="1.27" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="-2.54" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="AP64502Q">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="10.16" length="short"/>
+<pin name="EN" x="-12.7" y="5.08" length="short"/>
+<pin name="RT/CLK" x="-12.7" y="-5.08" length="short"/>
+<pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="SS" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="SW" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="BST" x="12.7" y="10.16" length="short" rot="R180"/>
+<text x="0" y="0" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="PCM1808">
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="AGND" x="-10.16" y="-15.24" length="short" rot="R90"/>
+<pin name="DGND" x="-7.62" y="-15.24" length="short" rot="R90"/>
+<pin name="VCC" x="-2.54" y="-15.24" length="short" rot="R90"/>
+<pin name="VDD" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="SCLK" x="-15.24" y="10.16" length="short"/>
+<pin name="BCK" x="-15.24" y="7.62" length="short"/>
+<pin name="LRCK" x="-15.24" y="5.08" length="short"/>
+<pin name="DOUT" x="-15.24" y="2.54" length="short"/>
+<pin name="VINR" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="VINL" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="FMT" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="MD0" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="MD1" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="VREF" x="7.62" y="-15.24" length="short" rot="R90"/>
+<text x="0" y="15.24" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="ADV7280-M">
+<wire x1="-17.78" y1="33.02" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="17.78" y2="33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
+<pin name="AIN1" x="-20.32" y="27.94" length="short"/>
+<pin name="AIN2" x="-20.32" y="25.4" length="short"/>
+<pin name="AIN3" x="-20.32" y="22.86" length="short"/>
+<pin name="AIN4" x="-20.32" y="20.32" length="short"/>
+<pin name="AIN5" x="-20.32" y="17.78" length="short"/>
+<pin name="AIN6" x="-20.32" y="15.24" length="short"/>
+<pin name="AIN7" x="-20.32" y="12.7" length="short"/>
+<pin name="AIN8" x="-20.32" y="10.16" length="short"/>
+<pin name="XTALP" x="-20.32" y="5.08" length="short"/>
+<pin name="XTALN" x="-20.32" y="0" length="short"/>
+<pin name="ALSB" x="-20.32" y="-7.62" length="short"/>
+<pin name="PWRDOWN" x="-20.32" y="-15.24" length="short"/>
+<pin name="RESET" x="-20.32" y="-17.78" length="short"/>
+<pin name="SCLK" x="-20.32" y="-20.32" length="short"/>
+<pin name="SDATA" x="-20.32" y="-22.86" length="short"/>
+<pin name="D0P" x="20.32" y="30.48" length="short" rot="R180"/>
+<pin name="D0N" x="20.32" y="27.94" length="short" rot="R180"/>
+<pin name="CLKP" x="20.32" y="22.86" length="short" rot="R180"/>
+<pin name="CLKN" x="20.32" y="20.32" length="short" rot="R180"/>
+<pin name="GP0" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="GP1" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="GP2" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="INTRQ" x="20.32" y="0" length="short" rot="R180"/>
+<pin name="VREFP" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="VREFN" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="DVDDIO" x="-15.24" y="-38.1" length="short" rot="R90"/>
+<pin name="AVDD" x="-5.08" y="-38.1" length="short" rot="R90"/>
+<pin name="DVDD" x="-10.16" y="-38.1" length="short" rot="R90"/>
+<pin name="MVDD" x="0" y="-38.1" length="short" rot="R90"/>
+<pin name="PVDD" x="5.08" y="-38.1" length="short" rot="R90"/>
+<pin name="DGND" x="12.7" y="-38.1" length="short" rot="R90"/>
+<text x="0" y="2.54" size="2.54" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="2.54" layer="96" ratio="15" align="center">&gt;VALUE</text>
+<pin name="EP" x="15.24" y="-38.1" length="short" rot="R90"/>
+</symbol>
+<symbol name="ADP151">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="0" length="short"/>
+<pin name="VIN" x="-10.16" y="5.08" length="short"/>
+<pin name="NC" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="EN" x="-10.16" y="-5.08" length="short"/>
+<pin name="VOUT" x="10.16" y="5.08" length="short" rot="R180"/>
+<text x="0" y="10.16" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.778" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6014,7 +6178,7 @@
 <connect gate="G$1" pin="IN" pad="3 15"/>
 <connect gate="G$1" pin="NC" pad="18 19 20 21"/>
 <connect gate="G$1" pin="PGND" pad="1 5 13 17"/>
-<connect gate="G$1" pin="RND" pad="2 16"/>
+<connect gate="G$1" pin="RGND" pad="2 16"/>
 <connect gate="G$1" pin="SW" pad="4 8 9 14"/>
 <connect gate="G$1" pin="VCC" pad="7"/>
 <connect gate="G$1" pin="VDROP" pad="22"/>
@@ -6048,6 +6212,153 @@
 <attribute name="MFG" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MFI337S3959" constant="no"/>
 <attribute name="VALUE" value="MFI337S" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP64502Q" prefix="U">
+<description>The AP64502Q is an automotive-compliant, 5A, synchronous buck
+converter with a wide input voltage range of 3.8V to 40V. The device
+fully integrates a 45mΩ high-side power MOSFET and a 20mΩ low-side
+power MOSFET to provide high-efficiency step-down DC-DC
+conversion.
+The AP64502Q device is easily used by minimizing the external
+component count due to its adoption of peak current mode control along
+with its integrated loop compensation network.
+The AP64502Q design is optimized for Electromagnetic Interference
+(EMI) reduction. The device has a proprietary gate driver scheme to
+resist switching node ringing without sacrificing MOSFET turn-on and
+turn-off times, which reduces high-frequency radiated EMI noise caused
+by MOSFET switching. The AP64502Q also features Frequency Spread
+Spectrum (FSS) with a switching frequency jitter of ±6%, which reduces
+EMI by not allowing emitted energy to stay in any one frequency for a
+significant period of time.
+The device is available in an SO-8EP package.</description>
+<gates>
+<gate name="G$1" symbol="AP64502Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO-8EP">
+<connects>
+<connect gate="G$1" pin="BST" pad="1"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="GND" pad="7 EP"/>
+<connect gate="G$1" pin="RT/CLK" pad="4"/>
+<connect gate="G$1" pin="SS" pad="6"/>
+<connect gate="G$1" pin="SW" pad="8"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Inc" constant="no"/>
+<attribute name="MPN" value="AP64502Q" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCM1808" prefix="U">
+<gates>
+<gate name="G$1" symbol="PCM1808" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP14">
+<connects>
+<connect gate="G$1" pin="AGND" pad="2"/>
+<connect gate="G$1" pin="BCK" pad="8"/>
+<connect gate="G$1" pin="DGND" pad="5"/>
+<connect gate="G$1" pin="DOUT" pad="9"/>
+<connect gate="G$1" pin="FMT" pad="12"/>
+<connect gate="G$1" pin="LRCK" pad="7"/>
+<connect gate="G$1" pin="MD0" pad="10"/>
+<connect gate="G$1" pin="MD1" pad="11"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VINL" pad="13"/>
+<connect gate="G$1" pin="VINR" pad="14"/>
+<connect gate="G$1" pin="VREF" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="PCM1808" constant="no"/>
+<attribute name="VALUE" value="PCM1808" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADV72080A-M" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADV7280-M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LFCSP-32">
+<connects>
+<connect gate="G$1" pin="AIN1" pad="17"/>
+<connect gate="G$1" pin="AIN2" pad="18"/>
+<connect gate="G$1" pin="AIN3" pad="22"/>
+<connect gate="G$1" pin="AIN4" pad="23"/>
+<connect gate="G$1" pin="AIN5" pad="24"/>
+<connect gate="G$1" pin="AIN6" pad="25"/>
+<connect gate="G$1" pin="AIN7" pad="26"/>
+<connect gate="G$1" pin="AIN8" pad="27"/>
+<connect gate="G$1" pin="ALSB" pad="29"/>
+<connect gate="G$1" pin="AVDD" pad="21"/>
+<connect gate="G$1" pin="CLKN" pad="12"/>
+<connect gate="G$1" pin="CLKP" pad="11"/>
+<connect gate="G$1" pin="D0N" pad="10"/>
+<connect gate="G$1" pin="D0P" pad="9"/>
+<connect gate="G$1" pin="DGND" pad="1 4"/>
+<connect gate="G$1" pin="DVDD" pad="3"/>
+<connect gate="G$1" pin="DVDDIO" pad="2"/>
+<connect gate="G$1" pin="EP" pad="EP"/>
+<connect gate="G$1" pin="GP0" pad="8"/>
+<connect gate="G$1" pin="GP1" pad="7"/>
+<connect gate="G$1" pin="GP2" pad="6"/>
+<connect gate="G$1" pin="INTRQ" pad="5"/>
+<connect gate="G$1" pin="MVDD" pad="13"/>
+<connect gate="G$1" pin="PVDD" pad="16"/>
+<connect gate="G$1" pin="PWRDOWN" pad="32"/>
+<connect gate="G$1" pin="RESET" pad="28"/>
+<connect gate="G$1" pin="SCLK" pad="31"/>
+<connect gate="G$1" pin="SDATA" pad="30"/>
+<connect gate="G$1" pin="VREFN" pad="20"/>
+<connect gate="G$1" pin="VREFP" pad="19"/>
+<connect gate="G$1" pin="XTALN" pad="15"/>
+<connect gate="G$1" pin="XTALP" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Analog Devices" constant="no"/>
+<attribute name="MPN" value=" ADV72080A-M" constant="no"/>
+<attribute name="VALUE" value=" ADV72080A-M" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADP151AUJZ-3.3-R7" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADP151" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Analog Devices" constant="no"/>
+<attribute name="MPN" value="ADP151AUJZ-3.3-R7" constant="no"/>
+<attribute name="VALUE" value="ADP151AUJZ-3.3-R7" constant="no"/>
 </technology>
 </technologies>
 </device>
